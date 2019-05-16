@@ -1,3 +1,18 @@
-<p>
-  header works!
-</p>
+<header class="ld-header navbar">
+  <a class="logo" href="#"><img src="{{logoImage}}" /></a>
+  <ul class="nav navbar-nav d-md-down-none">
+    <li *ngFor="let menu of menus" class="nav-item px-3"><a class="nav-link" [routerLink]="[menu.link]" href="#">{{menu.text}}</a></li>
+  </ul>
+  <div class="show avatar">
+    <span class="dropdown">
+        <label>
+          <span>
+            <img class="img-avatar" src="{{avatarImage}}"></span>
+            <input type="checkbox">
+          <ul class="dropdown-menu">
+            <li *ngFor="let item of profiles" class="nav-link"><a [routerLink]="[item.link]" href href="#">{{item.text}}</a></li>
+          </ul>
+        </label>
+      </span>
+  </div>
+</header>

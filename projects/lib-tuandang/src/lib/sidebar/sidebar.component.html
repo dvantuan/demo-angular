@@ -1,3 +1,8 @@
-<p>
-  sidebar works!
-</p>
+<nav id="sidebar" class="">
+  <div class="sidebar-header">
+      <h5>Header Sidebar</h5>
+  </div>
+  <ul class="list-unstyled">
+      <li *ngFor="let menu of menus" [routerLinkActive]="['active']"><a [routerLink]="[menu.link]" href="#">{{menu.text}}</a></li>
+  </ul>
+</nav>

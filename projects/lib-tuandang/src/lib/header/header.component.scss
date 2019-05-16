@@ -1,0 +1,133 @@
+@import "./bootstrap.css";
+header.ld-header{
+  position: relative;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  justify-content: unset;
+  height: 55px;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  border-bottom: 1px solid #c8ced3;
+}
+.ld-header .nav-item {
+  position: relative;
+  min-width: 50px;
+  margin: 0;
+  text-align: center;
+}
+.ld-header .nav-item .nav-link {
+  padding-top: 0;
+  padding-bottom: 0;
+  background: 0;
+  border: 0;
+  color: #73818f;
+}
+.ld-header .nav-item .nav-link:hover {
+  color: #2f353a;
+}
+.ld-header .logo {
+  padding: 0px 30px;
+}
+.ld-header .logo img {
+  height: 35px;
+}
+.ld-header .navbar-nav {
+  flex-direction: row;
+  align-items: center;
+}
+.ld-header .avatar {
+  position: absolute;
+  right: 20px;
+}
+.ld-header .avatar .img-avatar {
+  height: 35px;
+  width: 35px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  margin: 0 10px;
+  border-radius: 50em;
+}
+.ld-header .avatar .dropdown-menu {
+  padding: 0 0;
+  right: 0;
+  left: auto;
+}
+.ld-header .avatar .dropdown-menu li {
+  border-bottom: 1px solid #c8ced3;
+  padding: 7px 20px;
+}
+.ld-header .avatar .dropdown-menu li:hover {
+  background: #c8ced3;
+}
+.ld-header .avatar .dropdown-menu a {
+  color: #73818f;
+}
+.ld-header .avatar .dropdown-menu a:hover {
+  text-decoration: unset;
+}
+.navbar {
+  justify-content: unset;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.dropdown > a, .dropdown > button {
+  font-size: 14px;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 6px 20px 6px 10px;
+  border-radius: 4px;
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown input[type=checkbox] {
+  position: absolute;
+  display: block;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  opacity: 0;
+  z-index: 0;
+  cursor: pointer;
+}
+
+.dropdown input[type=checkbox]:checked {
+  position: fixed;
+  z-index:+0;
+  top: 0px; left: 0px;
+  right: 0px; bottom: 0px;
+}
+
+.dropdown ul {
+  position: absolute;
+  top: 38px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  right: 0px;
+  list-style: none;
+  padding: 4px 0px;
+  display: none;
+  background-color: white;
+  box-shadow: 0 3px 6px rgba(0,0,0,.175);
+}
+
+.dropdown input[type=checkbox]:checked + ul {
+  display: block;
+}
+
+.dropdown ul li {
+  display: block;
+  padding: 6px 20px;
+  white-space: nowrap;
+  min-width: 100px;
+}
+

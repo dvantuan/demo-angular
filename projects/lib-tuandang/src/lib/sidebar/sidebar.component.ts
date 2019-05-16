@@ -3,10 +3,10 @@ import { Component, OnInit, Input } from '@angular/core';
 @Component({
   selector: 'lib-sidebar',
   templateUrl: './sidebar.component.html',
-  styleUrls: ['./sidebar.component.scss', './../bootstrap.min.css']
+  styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent implements OnInit {
-  @Input() public menus: Array<Object>;
+  @Input() public sidebarMenus: Array<Object>;
   constructor() { }
 
   ngOnInit() {

@@ -4,12 +4,17 @@ header.ld-header{
   -ms-flex-direction: row;
   flex-direction: row;
   justify-content: unset;
-  height: 55px;
+  height: 60px;
   padding: 0;
   margin: 0;
   background-color: #fff;
   border-bottom: 1px solid #c8ced3;
 }
+
+.ld-header .nav-item li a:hover {
+  background: #20a8d8;
+}
+
 .ld-header .nav-item {
   position: relative;
   min-width: 50px;
@@ -21,16 +26,16 @@ header.ld-header{
   padding-bottom: 0;
   background: 0;
   border: 0;
-  color: #73818f;
+  color: #111212;
 }
 .ld-header .nav-item .nav-link:hover {
-  color: #2f353a;
+  color: #1606eb;
 }
 .ld-header .logo {
-  padding: 0px 30px;
+  padding: 0px 40px;
 }
 .ld-header .logo img {
-  height: 35px;
+  height: 40px;
 }
 .ld-header .navbar-nav {
   flex-direction: row;
@@ -59,11 +64,12 @@ header.ld-header{
   padding: 7px 20px;
 }
 .ld-header .avatar .dropdown-menu li:hover {
-  background: #c8ced3;
+  background: #20a8d8;
 }
 .ld-header .avatar .dropdown-menu a {
   color: #73818f;
 }
+
 .ld-header .avatar .dropdown-menu a:hover {
   text-decoration: unset;
 }
@@ -73,11 +79,11 @@ header.ld-header{
 .dropdown {
   position: relative;
   display: inline-block;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .dropdown > a, .dropdown > button {
-  font-size: 14px;
+  font-size: 16px;
   background-color: white;
   border: 1px solid #ccc;
   padding: 6px 20px 6px 10px;

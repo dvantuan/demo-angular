@@ -6,7 +6,7 @@ import { Component, OnInit, Input} from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  @Input() public menus: Array<Object>;
+  @Input() public headerMenus: Array<Object>;
   @Input() public profiles: Array<Object>;
   @Input() public logoImage: String;
   @Input() public avatarImage: String;

@@ -1,4 +1,4 @@
-#sidebar {
+.sidebar {
     min-width: 200px;
     max-width: 200px;
     background: #2f353a;
@@ -7,28 +7,28 @@
     position: fixed;
     height: 100%;
   }
-  #sidebar .list-unstyled li a {
+  .sidebar .list-unstyled li a {
     color: #fff;
     padding: 10px;
-    font-size: 1.1em;
+    font-size: 16px;
     display: block;
     text-decoration: none;
   }
-  #sidebar .list-unstyled li a:hover {
+  .sidebar .list-unstyled li a:hover {
     background: #20a8d8;
   }
-  #sidebar .list-unstyled .active a {
+  .sidebar .list-unstyled .active a {
     color: #fff;
     background: #20a8d8;
   }
-  #sidebar .active-sibar {
+  .sidebar .active-sibar {
     margin-left: -200px;
   }
-  #sidebar .sidebar-header {
+  .sidebar .sidebar-header {
     padding: 10px;
-    background: #3a4248;
+    background: #238ee0;
   }
-  #sidebar ul li.active > a, a[aria-expanded="true"] {
+  .sidebar ul li.active > a, a[aria-expanded="true"] {
     color: #fff;
     background: #6d7fcc;
   }

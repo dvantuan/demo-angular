@@ -1,8 +1,8 @@
-<nav id="sidebar" class="">
+<nav id="sidebar" class="sidebar">
   <div class="sidebar-header">
-      <h5>Header Sidebar</h5>
+      <h5>Sidebar</h5>
   </div>
   <ul class="list-unstyled">
-      <li *ngFor="let menu of menus" [routerLinkActive]="['active']"><a [routerLink]="[menu.link]" href="#">{{menu.text}}</a></li>
+      <li *ngFor="let menu of sidebarMenus" [routerLinkActive]="['active']"><a [routerLink]="[menu.link]" href="#">{{menu.text}}</a></li>
   </ul>
 </nav>

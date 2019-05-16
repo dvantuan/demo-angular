@@ -2,23 +2,56 @@
 
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.0.
 
-## Code scaffolding
+## How to install
 
-Run `ng generate component component-name --project lib-tuandang` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project lib-tuandang`.
-> Note: Don't forget to add `--project lib-tuandang` or else it will be added to the default project in your `angular.json` file. 
+Run 'npm i lib-tuandang'. \
+This lib is built on bootstrap, So you must add this line `node_modules/bootstrap/dist/css/bootstrap.min.css` into angular.json file as below :
+```javascript
+   "architect": {
+     "build": {
+       ...,
+       "styles": [
+          "src/styles.scss",
+          "node_modules/bootstrap/dist/css/bootstrap.min.css"
+        ],
+     }
+   }
+```
+# How to use
 
-## Build
+Import library to project.
+```javascript
+    import { import { LibTuandangModule } from 'lib-tuandang';
+    @NgModule({
+      declarations: [
+        AppComponent
+      ],
+      imports: [
+        BrowserModule,
+        AppRoutingModule,
+        import { LibTuandangModule } from 'lib-tuandang';
+      ],
+      providers: [],
+      bootstrap: [AppComponent]
+    })
+    export class AppModule { }
+```
 
-Run `ng build lib-tuandang` to build the project. The build artifacts will be stored in the `dist/` directory.
+Component and Usage
 
-## Publishing
+| Component  | Input | Type | Example |
+| ------------- | ------------- |------------- | ------------- |
+| lib-header  | headerMenus | Array | [{text: 'Home', link: '/home'}, {text: 'View', link: '/view'}, {text: 'Setting', link: '/setting'}, {text: 'Help', link: '/help'}] |
+|  | profiles| Array | [{text: 'Project', link: '/project'}, {text: 'Setting', link: '/setting'}, {text: 'Help', link: '/help'}] |
+| | logoImage | String | 'assets/image1.png' |
+| | avatarImage| String | 'assets/image2.png' |
+| lib-sidebar | sidebarMenus | Array | [{text: 'Profile', link: '/profile'}, {text: 'Setting', link: '/setting'}, {text: 'Logout', link: '/logout'}] |
+| lib-footer |  |  |  |
+| lib-login |  |  |  |
 
-After building your library with `ng build lib-tuandang`, go to the dist folder `cd dist/lib-tuandang` and run `npm publish`.
+Keywords
+none
 
-## Running unit tests
 
-Run `ng test lib-tuandang` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

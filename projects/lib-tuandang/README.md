@@ -29,7 +29,7 @@ Import library to project.
       imports: [
         BrowserModule,
         AppRoutingModule,
-        import { LibTuandangModule } from 'lib-tuandang';
+        LibTuandangModule
       ],
       providers: [],
       bootstrap: [AppComponent]

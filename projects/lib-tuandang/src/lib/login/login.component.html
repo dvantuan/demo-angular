@@ -17,11 +17,8 @@
 					/>
 					<div *ngIf="submitted && f.password.errors" class="invalid-feedback">
 						<div *ngIf="f.password.errors.required">Password is required</div>
+						<div *ngIf="f.password.errors.minlength">Password must be at least 8 characters</div>
 					</div>
-				</div>
-				<div class="form-group" *ngIf="showBinding">
-					<p for="password">Username: {{this.loginForm.value.username}}</p>
-					<p for="password">Password: {{this.loginForm.value.password}}</p>
 				</div>
 				<div class="form-group">
 					<button class="btn btn-primary">Login</button>
